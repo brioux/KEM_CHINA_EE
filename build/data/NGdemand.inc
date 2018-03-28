@@ -1,0 +1,100 @@
+* -----------------------------------------------------
+* MDB2GMS          24.1.3 r41464 Released Jul 26, 2013 VS8 x86/MS Windows       
+* Erwin Kalvelagen, GAMS Development Corp
+* -----------------------------------------------------
+* DAO version: 15.0
+* Jet version: 14.0
+* Database:    C:\Users\willbj0b\github\KEM_EMP\db\ChinaGas.accdb
+* Query:       SELECT [segment],[node],[demand] FROM [provincial demand]
+* -----------------------------------------------------
+Direct.Beijing 7.082739
+citygate.Beijing 7.082739
+Chemical.Beijing 0.00001
+Chemical.Shanxi 0.024
+Direct.Sichuan 9.4555
+citygate.Sichuan 6.1655
+citygate.Hebei 3.431
+Direct.Hebei 3.602
+Chemical.Hainan 0.025
+Chemical.Shandong 0.00001
+citygate.Shanghai 3.664
+Direct.Shanghai 3.664
+Chemical.Hunan 0.00001
+Direct.'Inner Mongolia' 0.8566
+citygate.'Inner Mongolia' 2.8694
+citygate.Liaoning 2.4255
+Direct.Liaoning 2.8835
+Chemical.Jilin 0.035
+Direct.Jilin 0.4292
+citygate.Jilin 1.6818
+Chemical.Jiangxi 0.00001
+Chemical.Hebei 0.171
+Direct.Heilongjiang 0.6978
+citygate.Heilongjiang 2.7912
+citygate.Shandong 4.016
+Direct.Shandong 4.016
+Chemical.Shaanxi 0.045431
+Chemical.'Inner Mongolia' 0.557
+Direct.Jiangsu 8.1015
+citygate.Jiangsu 7.9515
+Chemical.Tianjin 0.149
+citygate.Xinjiang 7.2675
+Direct.Xinjiang 7.2675
+Direct.Anhui 0.6932
+citygate.Anhui 2.7728
+Chemical.Anhui 0.00001
+Direct.Fujian 0.907622
+citygate.Fujian 3.630488
+Chemical.Fujian 0.00001
+citygate.Jiangxi 1.3336
+Direct.Jiangxi 0.3334
+Chemical.Jiangsu 0.15
+Chemical.Qinghai 1.08333
+Direct.Shaanxi 3.951398
+citygate.Shaanxi 3.905967
+Chemical.Heilongjiang 0.00001
+Direct.Henan 3.9555
+citygate.Henan 3.5805
+citygate.Hubei 3.0256268
+Chemical.Henan 0.375
+Direct.Hubei 0.7752092
+Chemical.Hubei 0.07521
+Direct.Hunan 0.5116304
+citygate.Hunan 2.0465216
+Direct.Guangdong 5.546
+Chemical.Gansu 0.453
+citygate.Guangdong 5.513
+Chemical.Guangdong 0.033
+Direct.Guangxi 0.161
+citygate.Guangxi 0.644
+Direct.Hainan 4.278
+Chemical.Guizhou 0.13
+citygate.Hainan 4.253
+Chemical.Chongqing 3.404
+citygate.Chongqing 2.658
+Direct.Chongqing 6.062
+Direct.Shanxi 3.254
+citygate.Shanxi 3.23
+Chemical.Shanghai 0.00001
+Direct.Guizhou 0.2897546
+citygate.Guizhou 1.0290184
+Chemical.Guangxi 0.00001
+Direct.Gansu 0.6098
+citygate.Gansu 1.9862
+Chemical.Ningxia 0.274461
+Direct.Qinghai 1.048992
+citygate.Qinghai 3.112638
+Chemical.Liaoning 0.458
+citygate.Ningxia 1.5691118
+Direct.Ningxia 0.4608932
+citygate.Tianjin 3.0505
+Direct.Tianjin 3.1995
+Chemical.Sichuan 3.29
+Chemical.Xinjiang 0.00001
+Direct.Yunnan 0.1236936
+citygate.Yunnan 0.4947744
+Chemical.Yunnan 0.00001
+Direct.Zhejiang 3.9108735
+citygate.Zhejiang 3.8887915
+Chemical.Zhejiang 0.022082
+* -----------------------------------------------------
