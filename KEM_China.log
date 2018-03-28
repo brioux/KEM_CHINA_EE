@@ -1,0 +1,244 @@
+
+--- Job KEM_China.gms Start 03/28/18 16:46:04 24.1.3 r41464 WEX-WEI x86_64/MS Windows
+GAMS 24.1.3   Copyright (C) 1987-2013 GAMS Development. All rights reserved
+Licensee: Information Technology, 10 user license        G131120:0812CN-WIN
+          King Abdullah Petroleum Studies & Research Center         DC10216
+--- Starting compilation
+--- KEM_China.gms(5) 2 Mb
+--- .natgas.gms(15) 3 Mb
+--- ..build/data/r.inc(47) 3 Mb
+--- .natgas.gms(20) 3 Mb
+--- ..build/data/NGrILNG.inc(22) 3 Mb
+--- .natgas.gms(24) 3 Mb
+--- ..build/data/NGrIPipe.inc(13) 3 Mb
+--- .natgas.gms(30) 3 Mb
+--- ..build/data/NGs.inc(707) 3 Mb
+--- .natgas.gms(35) 3 Mb
+--- ..build/data/NGts.inc(707) 4 Mb
+--- .natgas.gms(41) 4 Mb
+--- ..build/data/NGstatus.inc(707) 4 Mb
+--- .natgas.gms(52) 4 Mb
+--- ..build/data/NGconnect.inc(66) 4 Mb
+--- .natgas.gms(88) 4 Mb
+--- KEM_China.gms(6) 4 Mb
+--- .natgas.gms(4) 4 Mb
+--- ..build/data/NGpriceCap.inc(40) 4 Mb
+--- .natgas.gms(8) 4 Mb
+--- ..build/data/NGomCost.inc(11) 4 Mb
+--- .natgas.gms(12) 4 Mb
+--- ..build/data/NGcapitalCost.inc(11) 4 Mb
+--- .natgas.gms(16) 4 Mb
+--- ..build/data/NGpartner.inc(657) 4 Mb
+--- .natgas.gms(20) 4 Mb
+--- ..build/data/NGtransexist.inc(76) 4 Mb
+--- .natgas.gms(25) 4 Mb
+--- ..build/data/NGtransexistlen.inc(66) 4 Mb
+--- .natgas.gms(29) 4 Mb
+--- ..build/data/NGregasexist.inc(11) 4 Mb
+--- .natgas.gms(33) 4 Mb
+--- ..build/data/NGplateau.inc(11) 4 Mb
+--- .natgas.gms(37) 4 Mb
+--- ..build/data/NGlifetime.inc(11) 4 Mb
+--- .natgas.gms(41) 4 Mb
+--- ..build/data/NGregasCapitalCost.inc(11) 4 Mb
+--- .natgas.gms(45) 4 Mb
+--- ..build/data/NGdemand.inc(100) 4 Mb
+--- .natgas.gms(49) 4 Mb
+--- ..build/data/NGquota.inc(289) 4 Mb
+--- .natgas.gms(53) 4 Mb
+--- ..build/data/NGprod2015.inc(41) 4 Mb
+--- .natgas.gms(82) 4 Mb
+--- ..build/data/NGliqueexist.inc(11) 4 Mb
+--- .natgas.gms(86) 4 Mb
+--- ..build/data/NGliqueCapitalCost.inc(11) 4 Mb
+--- .natgas.gms(189) 4 Mb
+--- KEM_China.gms(7) 4 Mb
+--- .natgas.gms(38) 4 Mb
+--- KEM_China.gms(22) 4 Mb
+--- .natgasmodel.gms(238) 4 Mb
+--- KEM_China.gms(68) 4 Mb
+--- Starting execution: elapsed 0:00:00.171
+--- KEM_China.gms(4199) 6 Mb
+--- Generating EMP model NGglobalmin
+--- KEM_China.gms(4201) 11 Mb
+---   6,096 rows  7,856 columns  28,589 non-zeroes
+---   11,502 nl-code  5,799 nl-non-zeroes
+--- KEM_China.gms(4201) 9 Mb
+--- Executing JAMS: elapsed 0:00:00.910
+
+JAMS 1.0         24.1.3 r41464 Released Jul 26, 2013 WEI x86_64/MS Windows    
+
+JAMS - Solver for Extended Mathematical Programs (EMP)
+------------------------------------------------------
+
+--- Using Option File
+*** Error Cannot open parameter file "C:\Users\willbj0b\github\KEM_CHINA_EE\jams.opt"
+*** Error Error code = 2; No such file or directory
+
+--- EMP Summary
+    Logical Constraints = 0
+    Disjunctions        = 0
+    Adjusted Constraint = 0
+    Flipped Constraints = 0
+    Dual Variable Maps  = 178
+    Dual Equation Maps  = 67
+    VI Functions        = 0
+    Equilibrium Agent   = 0
+    Bilevel Followers   = 0
+
+--- The model C:\Users\willbj0b\github\KEM_CHINA_EE\225a\emp.dat will be solved by GAMS
+---
+--- Job emp.dat Start 03/28/18 16:46:06 24.1.3 r41464 WEX-WEI x86_64/MS Windows
+GAMS 24.1.3   Copyright (C) 1987-2013 GAMS Development. All rights reserved
+Licensee: Information Technology, 10 user license        G131120:0812CN-WIN
+          King Abdullah Petroleum Studies & Research Center         DC10216
+--- Starting compilation
+--- emp.dat(40788) 11 Mb
+--- Starting execution: elapsed 0:00:00.731
+--- emp.dat(40786) 12 Mb
+--- Generating MCP model m
+--- emp.dat(40788) 19 Mb
+---   13,705 rows  13,705 columns  68,001 non-zeroes
+---   33,570 nl-code  15,200 nl-non-zeroes
+--- emp.dat(40788) 17 Mb
+--- Executing PATH: elapsed 0:00:01.292
+Reading dictionary...
+Reading row data...
+Evaluating functions...
+Checking model...
+Calculating Jacobian...
+
+PATH             24.1.3 r41464 Released Jul 26, 2013 WEI x86_64/MS Windows    
+
+13141 row/cols, 63907 non-zeros, 0.04% dense.
+
+Path 4.7.02 (Fri Jul 26 11:52:49 2013)
+Written by Todd Munson, Steven Dirkse, and Michael Ferris
+
+Zero:   148 Single:  4658 Double:  1164
+Forced:   101 Redundant:   160
+Zero:     0 Single:     5 Double:     0
+Forced:     0 Redundant:     4
+Zero:     1 Single:     0 Double:     0
+Forced:     4 Redundant:     0
+Zero:     3 Single:     0 Double:     0
+Preprocessed size   : 2465
+
+INITIAL POINT STATISTICS
+Maximum of X. . . . . . . . . .  0.0000e+000 var: (u2)
+Maximum of F. . . . . . . . . .  4.3103e+002 eqn: (dL_dx3763)
+Maximum of Grad F . . . . . . .  1.0000e+000 eqn: (dL_dx3747)
+                                            var: (u2)
+
+INITIAL JACOBIAN NORM STATISTICS
+Maximum Row Norm. . . . . . . .  1.9910e+001 eqn: (e3295)
+Minimum Row Norm. . . . . . . .  1.0000e+000 eqn: (e299)
+Maximum Column Norm . . . . . .  1.9910e+001 var: (u3295)
+Minimum Column Norm . . . . . .  1.0000e+000 var: (u5986)
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             5.8653e+001             0.0e+000 (e3602)
+    1     8   900    90 5.7899e+001  2.8e-002    5.9e-001 (e3602)
+    2     9  1080   900 3.2553e+001  1.0e+000    5.3e-001 (e3269)
+    3    10   550  1170 2.2021e+001  1.0e+000    3.3e-001 (dL_dx5485)
+    4    16   103  1018 2.1189e+001  1.7e-001    2.2e-001 (e5271)
+    5    20    67  1069 1.9672e+001  4.1e-001    2.0e-001 (e3484)
+    6    27    36  1094 1.9446e+001  6.9e-002    1.8e-001 (e3484)
+    7    34    24  1106 1.9394e+001  6.9e-002    1.6e-001 (e3484)
+    8    37    41  1106 1.7870e+001  6.4e-001    1.4e-001 (e3324)
+    9    43    41  1117 1.7460e+001  1.7e-001    1.3e-001 (e3324)
+   10    47    36  1131 1.6686e+001  4.1e-001    1.2e-001 (e3324)
+   11    55    23  1138 1.6679e+001  2.8e-002    1.1e-001 (e3324)
+   12    63     4  1140 1.6673e+001  2.8e-002    9.5e-002 (e3324)
+pn_search terminated: no basis change.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    64    13 1.6673e+001           I 8.5e-002 3.9e+000 (e3324)
+
+Minor Iteration Log
+minor      t          z     w     v   art ckpts  enter    leave
+  500  8.3176e-001  1116  1294    54     0     9 z[ 2293] z[ 2269]
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    1   546    65    14 9.4721e+000  1.0e+000 SM 3.4e-002 7.2e-001 (e3590)
+    2   134    66    15 9.1877e+000  1.0e+000 SO 1.4e-002 5.3e-001 (e3590)
+    3   202    67    16 9.2551e+000  1.0e+000 SO 5.5e-003 5.1e-001 (e3590)
+
+Minor Iteration Log
+minor      t          z     w     v   art ckpts  enter    leave
+  500  9.6695e-001  1138  1259    67     0     9 z[ 2276] w[ 2286]
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    4   565    68    17 7.8061e+000  1.0e+000 SO 2.2e-003 4.9e-001 (e181)
+
+Minor Iteration Log
+minor      t          z     w     v   art ckpts  enter    leave
+  500  4.5568e-001  1123  1275    66     0     9 w[ 1931] z[ 1499]
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    5   985    69    18 1.7359e+000  1.0e+000 SO 8.7e-004 1.5e-001 (e3609)
+    6   261    70    19 4.2085e-001  1.0e+000 SO 3.5e-004 7.1e-002 (e3256)
+    7    81    71    20 6.3510e-002  1.0e+000 SO 1.4e-004 2.4e-002 (e3627)
+    8    20    72    21 1.9767e-002  1.0e+000 SO 5.6e-005 7.7e-003 (e3644)
+    9     9    73    22 2.4056e-003  1.0e+000 SO 2.2e-005 1.1e-003 (e3648)
+   10     1    74    23 3.3200e-004  1.0e+000 SO 8.9e-006 1.0e-004 (e3642)
+   11     1    75    24 3.3200e-004  1.0e+000 SO 3.6e-006 1.0e-004 (e3642)
+   12     1    76    25 3.3200e-004  1.0e+000 SO 1.4e-006 1.0e-004 (e3642)
+   13     2    77    26 3.3111e-004  1.0e+000 SO 5.7e-007 1.0e-004 (e3642)
+   14    48    78    27 1.0715e-004  1.0e+000 SO 2.3e-007 3.8e-005 (e3641)
+   15     1    79    28 1.9735e-005  1.0e+000 SO 9.2e-008 1.4e-005 (e3279)
+   16     3    80    29 4.3754e-005  1.0e+000 SO 3.7e-008 3.1e-005 (e3260)
+   17     4    81    30 7.7275e-006  1.0e+000 SO 1.5e-008 3.9e-006 (e3278)
+   18     1    82    31 1.6943e-012  1.0e+000 SO 5.9e-009 4.0e-013 (dL_dx5805)
+
+FINAL STATISTICS
+Inf-Norm of Complementarity . .  7.8924e-012 eqn: (e3577)
+Inf-Norm of Normal Map. . . . .  3.9790e-013 eqn: (dL_dx5805)
+Inf-Norm of Minimum Map . . . .  3.9790e-013 eqn: (dL_dx5805)
+Inf-Norm of Fischer Function. .  3.9790e-013 eqn: (dL_dx5805)
+Inf-Norm of Grad Fischer Fcn. .  9.0949e-013 eqn: (e3569)
+Two-Norm of Grad Fischer Fcn. .  3.4649e-012
+
+FINAL POINT STATISTICS
+Maximum of X. . . . . . . . . .  4.7021e+002 var: (u3265)
+Maximum of F. . . . . . . . . .  4.3900e+002 eqn: (dL_dx3782)
+Maximum of Grad F . . . . . . .  1.0000e+000 eqn: (dL_dx3747)
+                                            var: (u2)
+
+ ** EXIT - solution found.
+
+Major Iterations. . . . 18
+Minor Iterations. . . . 2865
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 12
+Gradient Steps. . . . . 0
+Function Evaluations. . 82
+Gradient Evaluations. . 31
+Total Time. . . . . . . 1.670000
+Residual. . . . . . . . 1.694327e-012
+Postsolved residual: 2.3942e-007
+
+--- Restarting execution
+--- emp.dat(40788) 11 Mb
+--- Reading solution for model m
+*** Status: Normal completion
+--- Job emp.dat Stop 03/28/18 16:46:10 elapsed 0:00:03.894
+--- Returning from GAMS step
+---
+--- Equations skipped = 1  Equations added = 7610
+--- Variables skipped = 1  Variables added = 5850
+---
+--- Restarting execution
+--- KEM_China.gms(4201) 4 Mb
+--- Reading solution for model NGglobalmin
+--- KEM_China.gms(4201) 5 Mb
+--- Executing after solve: elapsed 0:00:06.224
+--- KEM_China.gms(4243) 6 Mb
+--- GDX File C:\Users\willbj0b\github\KEM_CHINA_EE\results/reference.gdx
+*** Status: Normal completion
+--- Job KEM_China.gms Stop 03/28/18 16:46:11 elapsed 0:00:06.250

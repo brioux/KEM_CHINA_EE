@@ -1,0 +1,41 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            // "folder_exclude_patterns": ["build/data","tools","etc", "trash"],
+            // "file_exclude_patterns": ["*.gpr","*LICENSE.md", "*.docx", "*.pdf", ".gitignore", "*.~gm", "*.par", "*.info"],
+            "follow_symlinks": true
+        }
+    ],
+    "settings":
+    {
+        // "draw_white_space": "all",
+        // "font_face": "Courier New",
+        "font_size": 10,
+        "rulers": [80],
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "command": "set_setting",
+        "args":
+        {
+            "setting": "color_scheme",
+            "value": "Packages/Color Scheme - Default/Cobalt.tmTheme"
+        }
+    },
+    "build_systems":
+    [
+        {
+            "name": "KEM_EMP",
+            "cmd": ["./$project_base_name.sh"],
+            "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+            // "selector": "source.gms",
+            "shell": false,
+            "working_dir": "$project_path",
+            
+            "windows": {
+                "cmd": ["$project_base_name.bat"]
+            }
+        }
+    ]
+}
