@@ -21,6 +21,7 @@ loop((NGm,NGw,r)$(NGfuelpflag(NGm,NGw,r)=4), priceCapFlag=1);
 
 $INCLUDE  src\equations\natgasmodel.gms
 
+
 parameters report;
 report(NGi,"Production (pipeline)") = sum((NGt,NGs,pipe,r),NGop.l(NGi,NGt,NGs,pipe,r)) ;
 report(NGi,"Production (LNG)")      = sum((NGt,NGs,LNG,r),NGop.l(NGi,NGt,NGs,LNG,r)) ;
@@ -54,13 +55,13 @@ report("Total","Total transport cost") =sum((NGi,NGii,NGw,r,rr)$NGc(NGii,NGw,NGi
 report("Total","Total regas cost") =sum((NGi,r),NGregasCapitalCost(NGi,r)*NGregasBld.l(NGi,r))+sum((NGi,r),NGregasCost*NGregas.l(NGi,r));
 report("Total","Total liq capa cost") =SUM((NGi,r,NGt,NGs)$(NGts(NGt,NGs,r) and NGsD(NGs)),NGcapitalCost(NGt,NGs,r)*NGbld.l(NGi,NGt,NGs,r));
 
-report("Total","Total profits NOC") =sum(NGi$NOC(NGi),NGprofit.l(NGi));
+report("Total","Total profit NOC") =sum(NGi$NOC(NGi),NGprofit.l(NGi));
 report("Total","Total costs NOC") =sum(NGi$NOC(NGi),NGcosts.l(NGi)
     +sum((NGii,NGw,r,rr)$(NGc(NGi,NGw,NGii,r,rr) and ord(NGii)<>ord(NGi) and pipe(NGw)),
         NGtransP.l(NGw,NGii,r,rr)*NGtrans.l(NGi,NGw,NGii,r,rr)
     )
 );
-report("Total","Total profits Other") =sum(NGi$(not NOC(NGi)),NGprofit.l(NGi));
+report("Total","Total profit Other") =sum(NGi$(not NOC(NGi)),NGprofit.l(NGi));
 report("Total","Total costs Other") =sum(NGi$(not NOC(NGi)),NGcosts.l(NGi)
     +sum((NGii,NGw,r,rr)$(NGc(NGi,NGw,NGii,r,rr) and ord(NGii)<>ord(NGi) and pipe(NGw)),
         NGtransP.l(NGw,NGii,r,rr)*NGtrans.l(NGi,NGw,NGii,r,rr)

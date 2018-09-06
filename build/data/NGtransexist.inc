@@ -30,7 +30,6 @@ Sinopec.Hubei.Anhui 12
 CNPC.Hubei.Hunan 30
 Sinopec.Hubei.Hunan 25
 Sinopec.Hunan.Guangdong 15
-CNPC.'Imports Russia'.Jilin 38
 CNPC.'Imports Myanmar'.Yunnan 12
 CNPC.'Imports Asia'.Xinjiang 121
 Other.'Inner Mongolia'.Hebei 0

@@ -1,5 +1,5 @@
 Equations
-    NGobjective, NGobjectiveFirm(NGi) ,NGcostEqn(NGi), NGprofitEqn(NGi)
+    NGobjective, NGcostEqn(NGi), NGprofitEqn(NGi)
     NGpriceCapSlack(NGm,NGw,r) constraint for the slack variable - diff market price and price cap
     NGquotaEqn(NGm,NGw,r) constraint enforcing quotas on deliveries when the price is binding
     NGcaplim(NGi,NGt,NGs,r) gas field production limit
@@ -30,20 +30,6 @@ NGobjective..
     +sum(NGi,NGcosts(NGi))
 *   Add this below if Z is to be considered
     +sum((NGi,NGm,NGw,r),NGsupply(NGi,NGm,NGw,r)*NGz(NGm,NGw,r)$(NGfuelpflag(NGm,NGw,r)=4))
-;
-**************************************
-* Abstract: Objective function for firm lvel optimization
-* Precondition: Total systesm costs and lost market value if price cap enforced
-* Postcondition: Total systems cost including lost reveneu under price cap (provides firm incentive to switch to devliery modes without price cap)
-**************************************
-NGobjectiveFirm(NGi)..
-    NGobjval(NGi) =e=
-    +sum((NGm,NGw,r),
-        +NGsupply(NGi,NGm,NGw,r)*NGz(NGm,NGw,r)$(NGfuelpflag(NGm,NGw,r)=4))
-    +sum((NGii,NGw,r,rr)$(NGc(NGi,NGw,NGii,r,rr) and ord(NGii)<>ord(NGi) and pipe(NGw)),
-        NGtransP(NGw,NGii,r,rr)*NGtrans(NGi,NGw,NGii,r,rr)
-    )
-    +NGcosts(NGi)
 ;
 **************************************
 * Abstract: Firm level profit equation
@@ -215,8 +201,9 @@ NGimportEqn(NGi,NGw)$NGiw(NGi,NGw)..
 
 ********************************************************************************************************
 model NGequations
-    /NGcostEqn, NGpriceCapSlack,NGprofitEqn, NGquotaEqn, NGcaplim, NGbldPartner, NGsup,NGdem_m,NGtransbarrier,NGtransCapLim,
-         NGregasLim,NGliqueLim, NGtransPricEqn, NGimportEqn, NGprice_eqn/
+    /NGcostEqn, NGpriceCapSlack,NGprofitEqn, NGquotaEqn, NGcaplim, NGbldPartner, 
+     NGsup,NGdem_m,NGtransbarrier,NGtransCapLim,NGregasLim,
+     NGliqueLim, NGtransPricEqn, NGimportEqn, NGprice_eqn/
 ;
 model NGglobalmin
     /NGobjective,NGsupEnforce,NGEquations/
@@ -231,6 +218,6 @@ put empinfo 'DualVar DNGdem_m NGdem_m ';
 put$(priceCapFlag=1) empinfo 'DualVar NGz NGquotaEqn';
 put$(priceCapFlag=1) empinfo 'DualEqu NGpriceCapSlack NGsupplyQ ';
 putclose empinfo / 'modeltype mcp'/;
-NGglobalmin.optfile=1;
+*NGglobalmin.optfile=1;
 *Execute_Loadpoint 'results/reference.gdx';
 solve NGglobalmin using EMP minimizing z;

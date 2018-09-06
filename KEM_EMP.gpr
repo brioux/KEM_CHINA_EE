@@ -15214,7 +15214,7 @@ RowDim=3
 Squeeze=1
 Order=6,4,2,3,5,1
 Decim=7
-PlaneRownr=1
+PlaneRownr=-1
 PlaneFilter1=Level
 PlaneFilter2=lng
 
@@ -15250,11 +15250,6 @@ Order=5,1,4,3,2
 Decim=7
 PlaneRownr=-1
 
-[RP:KEM_CHINA]
-1=gdx=results/reference_2
-2=gdx=results/reference
-3=gdx=resuls/reference
-
 [GDXDISP: NGdem_m Equ 2]
 PlaneDim=1
 RowDim=1
@@ -15267,23 +15262,296 @@ PlaneFilter1=Marginal
 [RP:UNTITLED_1]
 1=
 
-[MRUFILES]
-1=C:\Users\willbj0b\github\KEM_EMP\results\reference_2.gdx
-2=C:\Users\willbj0b\github\KEM_EMP\results\reference.gdx
-3=C:\Users\willbj0b\github\KEM_EMP\KEM_China.lst
-4=C:\Users\willbj0b\github\KEM_EMP\KEM_China.gms
-5=C:\Users\jarbouaa\KEM_EMP\src\equations\transmissionsubmodel.gms
-6=C:\Users\jarbouaa\KEM_EMP\src\equations\cementsubmodel.gms
-7=C:\Users\jarbouaa\KEM_EMP\EMP_stateemnt.gms
-8=C:\Users\jarbouaa\KEM_EMP\KEM_EMP.lst
-9=C:\Users\jarbouaa\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\L42YJINK\Integrated EMP.GMS
+[RP:TRANSMISSIONSUBMODELLP]
+1=
+
+[RP:3_4_2_9]
+1=
+
+[GDXDISP: NGomCost Par 3]
+PlaneDim=1
+RowDim=2
+Squeeze=1
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGdemand Par 2]
+Sorted=YY
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=2,1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: pipe Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: priceCapFlag Par 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+Order=
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGregas Var 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGregasexist Par 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGregasBld Var 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGregasCapitalCost Par 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGregasCost Par 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+Order=
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGregasLim Equ 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGregasYield Par 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+Order=
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGrILng Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
 
 [OPENWINDOW_1]
-FILE0=C:\Users\willbj0b\github\KEM_CMO\3_4_2_9.gms
-FILE1=C:\Users\willbj0b\github\KEM_EMP\Untitled_1.gms
-FILE2=C:\Users\willbj0b\github\KEM_CMO\3_4_2_9.gms
-MAXIM=1
-TOP=-2
-LEFT=2
-HEIGHT=379
-WIDTH=831
+MAXIM=0
+TOP=249
+LEFT=-217
+HEIGHT=742
+WIDTH=1453
+
+[GDXDISP: NGt Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[RP:NATGASMODEL]
+1=
+
+[GDXDISP: NGtrans Var 5]
+PlaneDim=2
+RowDim=2
+Squeeze=1
+Order=6,2,4,5,1,3
+Decim=7
+PlaneRownr=-1
+PlaneFilter1=Level
+PlaneFilter2=lng
+
+[GDXDISP: NGi Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGimport Var 3]
+PlaneDim=1
+RowDim=2
+Squeeze=1
+Order=2,1,3,4
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGtransbarrier Equ 4]
+PlaneDim=0
+RowDim=4
+Squeeze=1
+Order=1,2,3,4,5
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGtransbld Var 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+Order=1,2,3,4
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGtransCapitalCost Par 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGtransCapLim Equ 4]
+PlaneDim=2
+RowDim=2
+Squeeze=1
+Order=3,2,1,4,5
+Decim=7
+PlaneRownr=91
+Sorted=YYYY
+PlaneFilter1=Xinjiang
+PlaneFilter2=Sinopec
+
+[GDXDISP: NGtransCost Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGtransexist Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGtransexistlen Par 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: natgas Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGdemLNG Par 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: UPa Par 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: UPi Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: UPimport Var 5]
+PlaneDim=0
+RowDim=5
+Squeeze=1
+Order=1,2,3,4,5,6
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: UPt Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGprice_eqn Equ 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGexist Var 4]
+PlaneDim=0
+RowDim=4
+Squeeze=1
+Order=1,2,3,4,5
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: UPtrans Var 7]
+PlaneDim=0
+RowDim=7
+Squeeze=1
+Order=1,2,3,4,5,6,7,8
+Decim=7
+PlaneRownr=-1
+
+[RP:KEM_CHINA]
+1=gdx=results/reference_2
+2=gdx=results/reference
+3=gdx=resuls/reference
+
+[MRUFILES]
+1=C:\Users\willbj0b\github\KEM_EMP\results\tpa.gdx
+2=C:\Users\willbj0b\github\KEM_EMP\results\test.gdx
+3=C:\Users\willbj0b\github\KEM_EMP\results\reference.gdx
+4=C:\Users\willbj0b\github\KEM_EMP\results\no_caps_tpa.gdx
+5=C:\Users\willbj0b\github\KEM_EMP\results\no_caps.gdx
+6=C:\Users\willbj0b\github\KEM_CHINA_EE\src\equations\natgasmodel.gms
+7=C:\Users\willbj0b\github\KEM_CHINA_EE\results/reference_2.gdx
+8=C:\Users\willbj0b\github\KEM_CHINA_EE\KEM_China.lst
+9=C:\Users\willbj0b\github\KEM_CHINA_EE\KEM_China.gms

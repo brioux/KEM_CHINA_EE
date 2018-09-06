@@ -85,42 +85,6 @@ $INCLUDE build/data/NGliqueexist.inc
         /
 $INCLUDE build/data/NGliqueCapitalCost.inc
         /
-    NGdemLNG(r)
-        /
-Beijing 0.804747537
-Tianjin 0.435287622
-Hebei   1.489141865
-Shanxi  3.092833104
-'Inner Mongolia' 1.935884424
-Liaoning    1.248588179
-Jilin   0.019091562
-Heilongjiang    0
-Shanghai    0.30928331
-Jiangsu 3.833585724
-Zhejiang    0.007636625
-Anhui   1.88242805
-Fujian  0.580383496
-Jiangxi 0
-Shandong    1.917525978
-Henan   2.733911731
-Hubei   2.707183544
-Hunan   0.749275093
-Guangdong   1.176040242
-Guangxi 0.301646685
-Hainan  1.023307743
-Chongqing   2.88664423
-Sichuan 2.23753111
-Guizhou 0.534563746
-Yunnan  0
-Shaanxi 1.245182244
-Gansu   1.069127493
-Qinghai 0.731359571
-Ningxia 1.240951554
-Xinjiang    3.806857536
-        /
-    NGa(NGm,r) intercept of inverse demand curve
-    NGb(NGm,r) slope of the inverse demand curve
-    NGe(NGm,r) price elasticity
 ;
 *   Re-scale demand to match 191.5 based on SIA data
     NGdemand(NGm,r)=NGdemand(NGm,r)*0.958;
@@ -135,9 +99,8 @@ Xinjiang    3.806857536
 ;
 
     NGdemand(NGm,r)$(NGdemand(NGm,r)<1e-4 and sum(NGmm,NGdemand(NGm,r))>0) = 1e-4;
-*Qinghai
-
-    NGimportPrice(NGi,lng) = 410;
+    
+    NGimportPrice(NGi,lng) = 397;
     NGiwR(NGi,"pipe","Imports Asia")$(NGimportPrice(NGi,'pipe')>0)=yes;
 *   enforce contracts to pipeline imports only
     NGiwR(NGi,"lng",r)$(NGimportPrice(NGi,'lng')>0 and NGrILng(r))=yes;
@@ -151,8 +114,9 @@ Xinjiang    3.806857536
     loop(r,NGpartner('Other',NGs)$NGts("CMM",NGs,r)=1);
     NGtransCapitalCost(r,rr)=0;
 scalar
-    NGliqCost additional cost for liquifying gas in USD per kcm /41/
-    NGregasCost regasification operationg cost USD per kcm /15/
+    NGliqCost additional cost for liquifying gas in USD per kcm /12/
+    NGregasCost regasification operationg cost USD per kcm /10/
+*   for regas and liquefaction losses se Eggin et al. (2013)
     NGtransLoss percent loss when transporting gas per km /0.00002/
     NGregasYield percent loss for regasificatino and injection /0.986/
     NGliqYield percent loss for liquefaction /0.88/
@@ -170,7 +134,8 @@ scalar
 *   CMM is considered free gas.
     NGomCost('CMM',NGs,r)=0
 ;
-    NGomCost('CBM',NGs,r)=79.7
+*  CBM cost minus government subsidies in 2015
+    NGomCost('CBM',NGs,r)=79.7-32.5
 ;
     NGcapitalCost('CMM',NGs,r)=0
 ;
