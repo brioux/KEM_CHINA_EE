@@ -15365,13 +15365,6 @@ Order=1
 Decim=7
 PlaneRownr=-1
 
-[OPENWINDOW_1]
-MAXIM=0
-TOP=249
-LEFT=-217
-HEIGHT=742
-WIDTH=1453
-
 [GDXDISP: NGt Set 1]
 PlaneDim=0
 RowDim=1
@@ -15540,6 +15533,22 @@ Order=1,2,3,4,5,6,7,8
 Decim=7
 PlaneRownr=-1
 
+[GDXDISP: NGbld Var 4]
+PlaneDim=0
+RowDim=4
+Squeeze=1
+Order=1,2,3,4,5
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: NGrIPipe Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+Order=1
+Decim=7
+PlaneRownr=-1
+
 [RP:KEM_CHINA]
 1=gdx=results/reference_2
 2=gdx=results/reference
@@ -15552,6 +15561,14 @@ PlaneRownr=-1
 4=C:\Users\willbj0b\github\KEM_EMP\results\no_caps_tpa.gdx
 5=C:\Users\willbj0b\github\KEM_EMP\results\no_caps.gdx
 6=C:\Users\willbj0b\github\KEM_CHINA_EE\src\equations\natgasmodel.gms
-7=C:\Users\willbj0b\github\KEM_CHINA_EE\results/reference_2.gdx
-8=C:\Users\willbj0b\github\KEM_CHINA_EE\KEM_China.lst
-9=C:\Users\willbj0b\github\KEM_CHINA_EE\KEM_China.gms
+
+[OPENWINDOW_1]
+FILE0=C:\Users\willbj0b\github\KEM_CHINA_EE\KEM_China.gms
+FILE1=C:\Users\willbj0b\github\KEM_CHINA_EE\KEM_China.lst
+FILE2=C:\Users\willbj0b\github\KEM_CHINA_EE\results\reference_2.gdx
+FILE3=C:\Users\willbj0b\github\KEM_CHINA_EE\KEM_China.lst
+MAXIM=0
+TOP=26
+LEFT=26
+HEIGHT=584
+WIDTH=1239

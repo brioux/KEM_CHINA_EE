@@ -6,7 +6,9 @@ $INCLUDE  src\sets\natgas.gms
 $INCLUDE  src\data\natgas.gms
 $INCLUDE  src\variables\natgas.gms
 
-*Flag for setting scenario with price caps
+*Flag for setting scenario pricing rule.
+*Set to 1 for marginal value
+*Set to 4 for price cap (requires calibrating NGpriceCap parameter)
     NGfuelpflag(NGm,NGw,r) = 1; /* Marginal Value*/
     NGfuelpflag("Citygate",'pipe',r)= 4; /* Price Cap */
     NGfuelpflag("Chemical",'pipe',r)= 4; /* Price Cap */
@@ -20,7 +22,6 @@ scalar priceCapFlag flag if price caps are present /0/;
 loop((NGm,NGw,r)$(NGfuelpflag(NGm,NGw,r)=4), priceCapFlag=1);
 
 $INCLUDE  src\equations\natgasmodel.gms
-
 
 parameters report;
 report(NGi,"Production (pipeline)") = sum((NGt,NGs,pipe,r),NGop.l(NGi,NGt,NGs,pipe,r)) ;
