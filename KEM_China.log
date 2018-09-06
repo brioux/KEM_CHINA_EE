@@ -1,5 +1,5 @@
 
---- Job KEM_China.gms Start 09/06/18 14:05:12 24.1.3 r41464 WEX-WEI x86_64/MS Windows
+--- Job KEM_China.gms Start 09/06/18 15:22:41 24.1.3 r41464 WEX-WEI x86_64/MS Windows
 GAMS 24.1.3   Copyright (C) 1987-2013 GAMS Development. All rights reserved
 Licensee: Information Technology, 10 user license        G131120:0812CN-WIN
           King Abdullah Petroleum Studies & Research Center         DC10216
@@ -56,15 +56,15 @@ Licensee: Information Technology, 10 user license        G131120:0812CN-WIN
 --- .natgas.gms(38) 4 Mb
 --- KEM_China.gms(24) 4 Mb
 --- .natgasmodel.gms(223) 4 Mb
---- KEM_China.gms(71) 4 Mb
---- Starting execution: elapsed 0:00:00.128
+--- KEM_China.gms(70) 4 Mb
+--- Starting execution: elapsed 0:00:00.110
 --- KEM_China.gms(4149) 6 Mb
 --- Generating EMP model NGglobalmin
 --- KEM_China.gms(4152) 11 Mb
 ---   6,096 rows  7,856 columns  28,589 non-zeroes
 ---   11,502 nl-code  5,799 nl-non-zeroes
 --- KEM_China.gms(4152) 9 Mb
---- Executing JAMS: elapsed 0:00:00.592
+--- Executing JAMS: elapsed 0:00:00.585
 
 JAMS 1.0         24.1.3 r41464 Released Jul 26, 2013 WEI x86_64/MS Windows    
 
@@ -83,20 +83,20 @@ JAMS - Solver for Extended Mathematical Programs (EMP)
 
 --- The model C:\Users\willbj0b\github\KEM_CHINA_EE\225a\emp.dat will be solved by GAMS
 ---
---- Job emp.dat Start 09/06/18 14:05:14 24.1.3 r41464 WEX-WEI x86_64/MS Windows
+--- Job emp.dat Start 09/06/18 15:22:44 24.1.3 r41464 WEX-WEI x86_64/MS Windows
 GAMS 24.1.3   Copyright (C) 1987-2013 GAMS Development. All rights reserved
 Licensee: Information Technology, 10 user license        G131120:0812CN-WIN
           King Abdullah Petroleum Studies & Research Center         DC10216
 --- Starting compilation
 --- emp.dat(40788) 11 Mb
---- Starting execution: elapsed 0:00:00.585
+--- Starting execution: elapsed 0:00:00.486
 --- emp.dat(40786) 12 Mb
 --- Generating MCP model m
 --- emp.dat(40788) 19 Mb
 ---   13,705 rows  13,705 columns  68,001 non-zeroes
 ---   33,570 nl-code  15,200 nl-non-zeroes
 --- emp.dat(40788) 17 Mb
---- Executing PATH: elapsed 0:00:01.153
+--- Executing PATH: elapsed 0:00:00.973
 Reading dictionary...
 Reading row data...
 Evaluating functions...
@@ -209,7 +209,7 @@ Crash Iterations. . . . 11
 Gradient Steps. . . . . 0
 Function Evaluations. . 88
 Gradient Evaluations. . 32
-Total Time. . . . . . . 2.324000
+Total Time. . . . . . . 2.889000
 Residual. . . . . . . . 1.869288e-012
 Postsolved residual: 6.4041e-012
 
@@ -217,7 +217,7 @@ Postsolved residual: 6.4041e-012
 --- emp.dat(40788) 11 Mb
 --- Reading solution for model m
 *** Status: Normal completion
---- Job emp.dat Stop 09/06/18 14:05:20 elapsed 0:00:05.522
+--- Job emp.dat Stop 09/06/18 15:22:50 elapsed 0:00:06.102
 --- Returning from GAMS step
 ---
 --- Equations skipped = 1  Equations added = 7610
@@ -227,8 +227,8 @@ Postsolved residual: 6.4041e-012
 --- KEM_China.gms(4152) 4 Mb
 --- Reading solution for model NGglobalmin
 --- KEM_China.gms(4152) 5 Mb
---- Executing after solve: elapsed 0:00:08.675
---- KEM_China.gms(4195) 6 Mb
+--- Executing after solve: elapsed 0:00:09.077
+--- KEM_China.gms(4194) 6 Mb
 --- GDX File C:\Users\willbj0b\github\KEM_CHINA_EE\results/reference_2.gdx
 *** Status: Normal completion
---- Job KEM_China.gms Stop 09/06/18 14:05:20 elapsed 0:00:08.714
+--- Job KEM_China.gms Stop 09/06/18 15:22:50 elapsed 0:00:09.133
